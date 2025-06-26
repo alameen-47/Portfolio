@@ -1,0 +1,111 @@
+@import "../../App.scss";
+.portfolio {
+  position: relative;
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 36px;
+    @include mobile {
+      padding-top: calc(100vh - 100px);
+    }
+    h1 {
+      color: #30d5c8;
+      @include mobile {
+        font-size: 38px;
+      }
+    }
+    .progressBar {
+      height: 10px;
+      background-color: white;
+    }
+  }
+  .container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    @include mobile {
+    }
+    .wrapper1 {
+      max-width: 1366px;
+
+      height: 100%;
+      margin: auto;
+      display: flex;
+      margin-top: 5%;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
+      @include mobile {
+        flex-direction: column;
+        margin-top: calc(100vh - 175%);
+      }
+
+      .imageContainer1 {
+        flex: 1;
+        height: 50%;
+        @include mobile {
+          width: 100%;
+          max-height: 300px;
+        }
+
+        img {
+          width: 90%;
+          height: 100%;
+          object-fit: cover;
+
+          filter: invert(0);
+          @include mobile {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+
+      .textContainer1 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @include mobile {
+          transform: none !important;
+          padding: 10px;
+          align-items: center;
+          text-align: center;
+        }
+
+        h2 {
+          font-size: 72px;
+          @include mobile {
+            font-size: 40px;
+          }
+        }
+        p {
+          color: gray;
+          font-size: 20px;
+          @include mobile {
+            font-size: 16px;
+          }
+        }
+        button {
+          color: #149186;
+          border: none;
+          border-radius: 10px;
+          padding: 10px;
+          width: 200px;
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: rgba(0, 255, 234, 0.948);
+          color: black;
+        }
+      }
+    }
+  }
+}
