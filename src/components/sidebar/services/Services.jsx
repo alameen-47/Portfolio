@@ -55,7 +55,7 @@ const Services = () => {
       <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
+          whileHover={{ background: "black", color: "white" }}
           variants={variants}
         >
           <h2>Web Development</h2>
@@ -67,7 +67,7 @@ const Services = () => {
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
+          whileHover={{ background: "black", color: "white" }}
           variants={variants}
         >
           <h2>Front-End Development</h2>
@@ -76,7 +76,7 @@ const Services = () => {
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
+          whileHover={{ background: "black", color: "white" }}
           variants={variants}
         >
           <h2>Full Stack Developer</h2>

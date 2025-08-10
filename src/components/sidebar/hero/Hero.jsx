@@ -52,9 +52,9 @@ const Hero = ({ scrollToContact, scrollToLatest }) => {
             initial="initial"
             animate="animate"
           >
-            <motion.h2 variants={textVariants}>Al Ameen</motion.h2>
+            <motion.h2 variants={textVariants}>Al Ameen M A</motion.h2>
             <motion.h1 variants={textVariants}>
-              Web Developer and Front-end Engineer
+              End-to-End Web & Mobile App Developer
             </motion.h1>
             <motion.div variants={textVariants} className="buttons">
               <motion.button
@@ -81,7 +81,8 @@ const Hero = ({ scrollToContact, scrollToLatest }) => {
             initial="initial"
             animate="animate"
           >
-            Web Developer Front-end Engineer Photo Editor Video Editor
+            End-to-End Web & Mobile App Developer Web Developer Front-end
+            Engineer Photo Editor Video Editor
           </motion.div>
         </div>
         <div className="imageContainer">
