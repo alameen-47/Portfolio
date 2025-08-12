@@ -1,4 +1,5 @@
-@import "../../App.scss";
+@use"../../App.scss" as *;
+;
 .navbar {
   height: 100px;
   .wrapper {

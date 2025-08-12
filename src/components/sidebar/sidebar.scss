@@ -1,4 +1,4 @@
-@import "../../App.scss";
+@use"../../App.scss" as *;
 .sidebar {
   display: flex;
   flex-direction: column;

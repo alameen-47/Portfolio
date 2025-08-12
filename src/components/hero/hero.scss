@@ -1,4 +1,5 @@
-@import "../../App.scss";
+@use"../../App.scss" as *;
+;
 .hero {
   overflow: hidden;
   height: calc(100vh - 100px);
