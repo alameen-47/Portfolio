@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import "./Contact.scss";
 import emailjs from "@emailjs/browser";
 import { motion, useInView } from "framer-motion";
+import toast from "react-hot-toast";
 
 const variants = {
   initial: {
@@ -26,15 +27,18 @@ const Contact = () => {
 
     emailjs
       .sendForm("service_gcxu7x5", "template_jx2i4gr", formRef.current, {
-        publicKey: "GePp1lG4dURnUESVY",
+        publicKey: "613Q2zFvcl1MGzwFd",
       })
       .then(
         (result) => {
           setError(false);
+          toast.success("Mail Sent!");
+
           console.log("SUCCESS!");
         },
         (error) => {
           setError(true);
+          toast.error("Mail send failed");
           console.log("FAILED...", error.text);
         }
       );
@@ -52,7 +56,7 @@ const Contact = () => {
         <motion.h1>Let's Work Together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>alameen@ametronyx.com</span>
+          <span>infoalameenkhan@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>

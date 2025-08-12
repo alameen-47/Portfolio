@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Links from "./links/Links";
+import Links from "../../components/links/Links";
 import ToggleButton from "./toggleButton/ToggleButton";
 import "./sidebar.scss";
 
@@ -32,7 +32,7 @@ const Sidebar = () => {
         <motion.div className="bg" variants={variants}>
           <Links />
         </motion.div>
-      
+
         <ToggleButton setOpen={setOpen} />
       </motion.div>
     </>

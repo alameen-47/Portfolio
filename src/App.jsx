@@ -5,9 +5,9 @@ import Cursor from "./components/cursor/Cursor";
 import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
-
-import Hero from "./components/sidebar/hero/Hero";
-import Services from "./components/sidebar/services/Services";
+import Hero from "./components/hero/Hero";
+import Services from "./components/services/Services";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const contactRef = useRef(null);
@@ -22,6 +22,7 @@ function App() {
 
   return (
     <>
+      <Toaster />
       <Cursor />
       <section id="Homepage">
         <Navbar />
