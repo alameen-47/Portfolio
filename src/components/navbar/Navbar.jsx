@@ -23,7 +23,11 @@ const Navbar = () => {
           <a href="https://www.facebook.com/athifkhan.athif">
             <img src="/src/assets/icons/social/facebook.png" alt="facebook" />
           </a>
-          <a href="linkedin.com/in/al-ameen-m-a-854731227">
+          <a
+            href="www.linkedin.com/in/al-ameen-ak47
+
+"
+          >
             <img src="/src/assets/icons/social/linkedin.png" alt="linkedin" />
           </a>
           <a href="https://github.com/alameen-47">

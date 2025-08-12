@@ -1,31 +1,26 @@
 import React, { useRef } from "react";
 import "./portfolio.scss";
+import rawad from "../../assets/projects/rawad.png";
+import credi8 from "../../assets/projects/Credit Flyer.png";
+// import rawad from "../../assets/projects/rawad.png";
 
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: "1",
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/16375201/pexels-photo-16375201/free-photo-of-basketball-hoop-standing-against-a-foggy-coast.jpeg?auto=compress&cs=tinysrgb&w=600",
-    desc: "Lorem ipsum dolor sit amet, consectetur adip  incididunt ut labore et dolore magna aliqu  compliance  nibh. Ut enim ad minim veniam",
+    title: "Rawad Mall E-Commerce",
+    img: rawad,
+    link: "https://e-commerce.ametronyx.com/",
+    desc: "A complete full-stack e-commerce solution Multi-language support for a global audience Secure, scalable, and ready for your business needs",
+    button: "See Demo",
   },
   {
     id: "2",
-    title: "AI ChatBOT",
-    img: "https://images.pexels.com/photos/16711419/pexels-photo-16711419/free-photo-of-silhouette-of-swan-in-lake.jpeg?auto=compress&cs=tinysrgb&w=600",
-    desc: "Lorem ipsum dolor sit amet, consectetur adip  incididunt ut labore et dolore magna aliqu  compliance  nibh. Ut enim ad minim veniam",
-  },
-  {
-    id: "3",
-    title: "Personal Blog",
-    img: "https://images.pexels.com/photos/15477405/pexels-photo-15477405/free-photo-of-ornamented-buildings-facades.jpeg?auto=compress&cs=tinysrgb&w=600",
-    desc: "Lorem ipsum dolor sit amet, consectetur adip  incididunt ut labore et dolore magna aliqu  compliance  nibh. Ut enim ad minim veniam",
-  },
-  {
-    id: "4",
-    title: "Music App ",
-    img: "https://images.pexels.com/photos/15477405/pexels-photo-15477405/free-photo-of-ornamented-buildings-facades.jpeg?auto=compress&cs=tinysrgb&w=600",
-    desc: "Lorem ipsum dolor sit amet, consectetur adip  incididunt ut labore et dolore magna aliqu  compliance  nibh. Ut enim ad minim veniam",
+    title: "CREDI8 - Track, Manage Credit Calls with Ease",
+    img: credi8,
+    link: "https://github.com/alameen-47/CREDI8.git",
+    desc: "Effortless credit call tracking for smarter merchant collections",
+    button: "See Code",
   },
 ];
 const Single = ({ item }) => {
@@ -39,7 +34,6 @@ const Single = ({ item }) => {
 
   return (
     <section>
-      
       <div className="container1">
         <div className="wrapper1">
           <div className="imageContainer1" ref={ref}>
@@ -48,7 +42,9 @@ const Single = ({ item }) => {
           <motion.div className="textContainer1" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <a href={item.link}>
+              <button>{item.button}</button>
+            </a>
           </motion.div>
         </div>
       </div>

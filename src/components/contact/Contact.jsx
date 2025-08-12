@@ -42,7 +42,6 @@ const Contact = () => {
 
   return (
     <motion.div
-    
       ref={ref1}
       className="contact"
       variants={variants}
@@ -53,7 +52,7 @@ const Contact = () => {
         <motion.h1>Let's Work Together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>info.alameenkhan@gmail.com</span>
+          <span>alameen@ametronyx.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>

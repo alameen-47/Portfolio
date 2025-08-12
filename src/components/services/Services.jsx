@@ -60,8 +60,8 @@ const Services = () => {
         >
           <h2>Web Development</h2>
           <p>
-            Bridging creativity and functionality, I craft digital experiences
-            as a web developer
+            Modern, responsive, and high-performance websites using React.js and
+            MERN Stack.
           </p>
           <button>Go</button>
         </motion.div>
@@ -70,8 +70,10 @@ const Services = () => {
           whileHover={{ background: "black", color: "white" }}
           variants={variants}
         >
-          <h2>Front-End Development</h2>
-          <p>Crafting user experiences with code #FrontEndDevLife</p>
+          <h2>Mobile App Development</h2>
+          <p>
+            Cross-platform, fast, and native-like mobile apps with React Native.
+          </p>
           <button>Go</button>
         </motion.div>
         <motion.div
@@ -79,10 +81,10 @@ const Services = () => {
           whileHover={{ background: "black", color: "white" }}
           variants={variants}
         >
-          <h2>Full Stack Developer</h2>
+          <h2>Full Stack Solutions</h2>
           <p>
-            Building seamless digital experiences from front-end to back-end as
-            a full stack developer.
+            End-to-end development, from backend APIs to frontend interfaces,
+            using MERN Stack.
           </p>
           <button>Go</button>
         </motion.div>
