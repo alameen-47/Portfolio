@@ -2,6 +2,12 @@ import React from "react";
 import "./navbar.scss";
 import { motion } from "framer-motion";
 import Sidebar from "../sidebar/Sidebar";
+import facebook from "../../assets/icons/facebook.png";
+import whatsapp from "../../assets/icons/whatsapp.png";
+import github from "../../assets/icons/github-sign.png";
+import instagram from "../../assets/icons/instagram.png";
+import linkedin from "../../assets/icons/linkedin.png";
+
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -18,23 +24,19 @@ const Navbar = () => {
         </motion.span>
         <div className="social  ">
           <a href="https://www.instagram.com/.am_in_?igsh=MTdyNTk1eHVwNnQ3ZA%3D%3D&utm_source=qr">
-            <img src="/public/icons/instagram.png" alt="instagram" />
+            <img src={instagram} alt="instagram" />
           </a>
           <a href="https://www.facebook.com/athifkhan.athif">
-            <img src="/public/icons/facebook.png" alt="facebook" />
+            <img src={facebook} alt="facebook" />
           </a>
-          <a
-            href="www.linkedin.com/in/al-ameen-ak47
-
-"
-          >
-            <img src="/public/icons/linkedin.png" alt="linkedin" />
+          <a href="www.linkedin.com/in/al-ameen-ak47">
+            <img src={linkedin} alt="linkedin" />
           </a>
           <a href="https://github.com/alameen-47">
-            <img src="/public/icons/github-sign.png" alt="github" />
+            <img src={github} alt="github" />
           </a>
           <a href="https://wa.me/6361020155">
-            <img src="/public/icons/whatsapp.png" alt="whatsapp" />
+            <img src={whatsapp} alt="whatsapp" />
           </a>
         </div>
       </div>
