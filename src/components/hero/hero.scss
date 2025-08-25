@@ -1,5 +1,4 @@
-@use"../../App.scss" as *;
-;
+@use "../../App.scss" as *;
 .hero {
   overflow: hidden;
   height: calc(100vh - 100px);
@@ -37,6 +36,7 @@
     color: aqua;
     font-size: 30px;
     letter-spacing: 8px;
+    padding-top: 2rem;
   }
   h1 {
     font-size: 48px;
@@ -87,8 +87,8 @@
   right: 0;
   @include mobile {
     height: 80%;
-    width: 100%;
-    object-fit: contain;
+    width: auto;
+    object-fit: cover;
     top: unset;
     bottom: 0;
   }
